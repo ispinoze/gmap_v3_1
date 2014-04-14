@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+       <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+       <script type="text/javascript">
+
+           function load() {
+
+               var map = new google.maps.Map(document.getElementById('map'), {
+
+                   zoom: 5,
+
+                   center: new google.maps.LatLng(38.75408327579141, 36.38671875),
+
+                   mapTypeId: google.maps.MapTypeId.HYBRID
+
+               });
+           }
+
+
+</script>
+</head>
+<body onload="load()">
+       
+    <div id="map" style="width:600px; height:600px"></div>
+       
+</body>
+</html>
